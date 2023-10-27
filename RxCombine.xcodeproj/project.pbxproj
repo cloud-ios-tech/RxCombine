@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1D90E6682AEC061F00AE96D1 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */; };
+		1D90E6692AEC061F00AE96D1 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D90E66A2AEC061F00AE96D1 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6672AEC061F00AE96D1 /* RxRelay.xcframework */; };
+		1D90E66B2AEC061F00AE96D1 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6672AEC061F00AE96D1 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_225 /* Publisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Publisher+Rx.swift */; };
 		OBJ_226 /* Subject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Subject+Rx.swift */; };
 		OBJ_227 /* DemandBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DemandBuffer.swift */; };
@@ -31,8 +35,6 @@
 		OBJ_232 /* PublishSubject+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* PublishSubject+Combine.swift */; };
 		OBJ_233 /* Relays+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Relays+Combine.swift */; };
 		OBJ_234 /* RxSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* RxSubscription.swift */; };
-		OBJ_236 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "rxswift::RxRelay::Product" /* RxRelay.framework */; };
-		OBJ_237 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "rxswift::RxSwift::Product" /* RxSwift.framework */; };
 		OBJ_247 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_258 /* ObservableAsPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* ObservableAsPublisherTests.swift */; };
 		OBJ_259 /* PublisherAsObservableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PublisherAsObservableTests.swift */; };
@@ -213,21 +215,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D90E65E2AEC01E900AE96D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "rxswift::RxRelay";
-			remoteInfo = RxRelay;
-		};
 		1D90E65F2AEC01E900AE96D1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "rxswift::RxSwift";
-			remoteInfo = RxSwift;
-		};
-		1D90E6602AEC01E900AE96D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -264,7 +252,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1D90E66C2AEC061F00AE96D1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D90E6692AEC061F00AE96D1 /* RxSwift.xcframework in Embed Frameworks */,
+				1D90E66B2AEC061F00AE96D1 /* RxRelay.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		1D90E6672AEC061F00AE96D1 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
 		OBJ_10 /* Publisher+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Rx.swift"; sourceTree = "<group>"; };
 		OBJ_100 /* HistoricalScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalScheduler.swift; sourceTree = "<group>"; };
 		OBJ_101 /* HistoricalSchedulerTimeConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricalSchedulerTimeConverter.swift; sourceTree = "<group>"; };
@@ -472,8 +477,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_236 /* RxRelay.framework in Frameworks */,
-				OBJ_237 /* RxSwift.framework in Frameworks */,
+				1D90E6682AEC061F00AE96D1 /* RxSwift.xcframework in Frameworks */,
+				1D90E66A2AEC061F00AE96D1 /* RxRelay.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +510,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D90E6652AEC061E00AE96D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D90E6672AEC061F00AE96D1 /* RxRelay.xcframework */,
+				1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -787,7 +801,7 @@
 			path = .build/checkouts/RxSwift/Sources/RxSwift;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -806,8 +820,8 @@
 				OBJ_217 /* Carthage.xcconfig */,
 				OBJ_218 /* RxCombine.podspec */,
 				OBJ_219 /* README.md */,
+				1D90E6652AEC061E00AE96D1 /* Frameworks */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -839,12 +853,11 @@
 			buildPhases = (
 				OBJ_224 /* Sources */,
 				OBJ_235 /* Frameworks */,
+				1D90E66C2AEC061F00AE96D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_238 /* PBXTargetDependency */,
-				OBJ_240 /* PBXTargetDependency */,
 			);
 			name = RxCombine;
 			productName = RxCombine;
@@ -947,7 +960,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_204 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1192,16 +1205,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_238 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "rxswift::RxRelay" /* RxRelay */;
-			targetProxy = 1D90E65E2AEC01E900AE96D1 /* PBXContainerItemProxy */;
-		};
-		OBJ_240 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "rxswift::RxSwift" /* RxSwift */;
-			targetProxy = 1D90E6602AEC01E900AE96D1 /* PBXContainerItemProxy */;
-		};
 		OBJ_252 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "rxcombine::RxCombineTests" /* RxCombineTests */;
@@ -1243,7 +1246,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxCombine_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1277,7 +1283,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxCombine_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1350,7 +1359,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxCombineTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1377,7 +1390,11 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxCombineTests_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1403,7 +1420,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxRelay_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1433,7 +1453,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxRelay_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1463,7 +1486,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxSwift_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1493,7 +1519,10 @@
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RxCombine.xcodeproj/RxSwift_Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -1558,7 +1587,8 @@
 				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
 				SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
