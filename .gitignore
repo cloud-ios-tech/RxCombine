@@ -17,7 +17,7 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 Package.resolved
-RxCombine.xcodeproj
+#RxCombine.xcodeproj
 
 ## Other
 *.moved-aside
