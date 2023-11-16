@@ -22,9 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		1D90E6682AEC061F00AE96D1 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */; };
-		1D90E6692AEC061F00AE96D1 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1D90E66A2AEC061F00AE96D1 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6672AEC061F00AE96D1 /* RxRelay.xcframework */; };
-		1D90E66B2AEC061F00AE96D1 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D90E6672AEC061F00AE96D1 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_225 /* Publisher+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Publisher+Rx.swift */; };
 		OBJ_226 /* Subject+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* Subject+Rx.swift */; };
 		OBJ_227 /* DemandBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DemandBuffer.swift */; };
@@ -251,21 +249,6 @@
 			remoteInfo = RxCombineTests;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		1D90E66C2AEC061F00AE96D1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1D90E6692AEC061F00AE96D1 /* RxSwift.xcframework in Embed Frameworks */,
-				1D90E66B2AEC061F00AE96D1 /* RxRelay.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1D90E6662AEC061F00AE96D1 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
@@ -853,7 +836,6 @@
 			buildPhases = (
 				OBJ_224 /* Sources */,
 				OBJ_235 /* Frameworks */,
-				1D90E66C2AEC061F00AE96D1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
